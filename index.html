@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat Interface</title>
+  <title>Flash AI Consultant</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <div class="chat-container">
-    <ul class="chat-list">
-      <li class="chat-message sent">Hello! How are you?</li>
-      <li class="chat-message received">I'm good, thanks! How about you?</li>
-      <li class="chat-message sent">Doing well, thanks for asking!</li>
-    </ul>
+    <ul class="chat-list" id="chat-list"></ul>
+    <form id="chat-form" class="chat-form">
+      <input id="message-input" type="text" placeholder="Type a message..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
   </div>
 </body>
 </html>
